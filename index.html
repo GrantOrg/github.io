@@ -70,7 +70,14 @@
 <p>This project is exactly what it sounds like. It's a program for command line minesweeper. It involved building a board based off user input, creating the bombs, allowing guesses, and bringing up the flags in accordance with bomb locations. While most of the work was done with vectors, we also had to use srand for generating the bombs. This was important because it tied into how we broke the rand() function and learned that even srand isn't completely random unless the seed is based off of outside factors that are too hard to predict. </p>
 
 <h3>
-<a id="geemail" class="anchor" href="#geemail" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GeeMail</h3>
+<a id="geemail---secure-email" class="anchor" href="#geemail---secure-email" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GeeMail - secure email</h3>
+
+<p>This was the most fun and most challenging project of the three. We were tasked with designing an asynchronous message platform that prompts a user for a sign-in or register as a new user. A user should have the ability to read any messages sent to themselves, and write a message to any other user. The catch was this all had to be a secure system. That meant that no passwords, messages or shared passphrases could be stored in plain text. We used a SQLite3 database for storage, and used Sha256 for encrypting passwords and passphrases. We stored those in the database as hashes to be compared to the input a user enters (and then have that input hashed and compared) and for the Messages we did our own XOR encryption on it with the shared passphrase. Although not the most secure way, it was our own method so we wanted to try it. Overall this was the project that I was most proud about creating, and the one I believe I learned the most useful skills from.</p>
+
+<h3>
+<a id="wrap-up" class="anchor" href="#wrap-up" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Wrap-up</h3>
+
+<p>Although by no means did this class make me an expert in secure software, just knowing what to pay attention to during the creation of code will help me make safer software down the line.</p>
 
 <h3>
 <a id="github-link" class="anchor" href="#github-link" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GitHub link</h3>
